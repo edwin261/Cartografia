@@ -72,6 +72,7 @@ $("document").ready(function() {
         }
     });
 
+    $("#my_audio").get(0).play();
 });
 
 function Click_Image_Button_Option(image_id) {
