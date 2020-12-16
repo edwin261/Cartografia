@@ -137,7 +137,7 @@ function Click_Image_Button_Option(image_id) {
             ChangeSelloImage('SELLO_MEMORIA');
             ChangeDescripcion('ESPACIO DE MEMORIA');
             $("#MemoriaDescripcion").css('display', 'block');
-            $("#ContainerDesctipcion").css('height', '31vh');
+            $("#ContainerDesctipcion").css('height', '36vh');
             $("#MapsFrame").attr("src", "https://www.google.com/maps/d/embed?mid=1_B8XQrLu6dvkjODviHr8tZXB-r44Vp1O");
             break;
         case "ARTESANIA":
