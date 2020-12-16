@@ -145,7 +145,7 @@ function Click_Image_Button_Option(image_id) {
             ChangeSelloImage('SELLO_ARTESANIAS');
             ChangeDescripcion('ESPACIO DE ARTESANIA');
             $("#ArtesaniaDescripcion").css('display', 'block');
-            $("#ContainerDesctipcion").css('height', '31vh');
+            $("#ContainerDesctipcion").css('height', '36vh');
             $("#MapsFrame").attr("src", "https://www.google.com/maps/d/u/1/embed?mid=1rhgqtgLxtuAEaBLXP6V79_bwnHfwVYtq");
             break;
     }
