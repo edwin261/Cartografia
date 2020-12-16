@@ -146,7 +146,7 @@ function Click_Image_Button_Option(image_id) {
             ChangeDescripcion('ESPACIO DE ARTESANIA');
             $("#ArtesaniaDescripcion").css('display', 'block');
             $("#ContainerDesctipcion").css('height', '31vh');
-            $("#MapsFrame").attr("src", "https://www.google.com/maps/d/edit?mid=1rhgqtgLxtuAEaBLXP6V79_bwnHfwVYtq");
+            $("#MapsFrame").attr("src", "https://www.google.com/maps/d/u/1/embed?mid=1rhgqtgLxtuAEaBLXP6V79_bwnHfwVYtq");
             break;
     }
 }

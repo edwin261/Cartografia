@@ -82,7 +82,7 @@ body {
 }
 
 #InmuebleDescripcion, #JuegosDescripcion, #CocinasDescripcion, #FiestasDescripcion,
-#DanzaDescripcion, #MemoriaDescripcion{
+#DanzaDescripcion, #MemoriaDescripcion, #ArtesaniaDescripcion{
 	margin-right: 12%;
 	display: none;
 }
