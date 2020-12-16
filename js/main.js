@@ -4,6 +4,7 @@ var COCINA_Img = false;
 var FIESTA_Img = false;
 var DANZA_Img = false;
 var MEMORIA_Img = false;
+var ARTESANIA_Img = false;
 
 $("document").ready(function() {
     //image INMUEBLE
@@ -72,6 +73,17 @@ $("document").ready(function() {
         }
     });
 
+    //image ARTESANIA
+    $("#img_ARTESANIA").mouseenter(function() {
+        $(this).attr('src', 'img/buttons/Green/ARTESANIA.png');
+    });
+    //image ARTESANIA hover    
+    $("#img_ARTESANIA").mouseleave(function() {
+        if (ARTESANIA_Img != true) {
+            $(this).attr('src', 'img/buttons/White/ARTESANIA.png');
+        }
+    });
+
     $("#my_audio").get(0).play();
 });
 
@@ -128,6 +140,14 @@ function Click_Image_Button_Option(image_id) {
             $("#ContainerDesctipcion").css('height', '31vh');
             $("#MapsFrame").attr("src", "https://www.google.com/maps/d/embed?mid=1_B8XQrLu6dvkjODviHr8tZXB-r44Vp1O");
             break;
+        case "ARTESANIA":
+            ARTESANIA_Img = true;
+            ChangeSelloImage('SELLO_ARTESANIAS');
+            ChangeDescripcion('ESPACIO DE ARTESANIA');
+            $("#ArtesaniaDescripcion").css('display', 'block');
+            $("#ContainerDesctipcion").css('height', '31vh');
+            $("#MapsFrame").attr("src", "https://www.google.com/maps/d/edit?mid=1rhgqtgLxtuAEaBLXP6V79_bwnHfwVYtq");
+            break;
     }
 }
 
@@ -138,6 +158,7 @@ function Default_Image_Button_Option() {
     $("#img_FIESTA").attr('src', 'img/buttons/White/FIESTA.png');
     $("#img_DANZA").attr('src', 'img/buttons/White/DANZA.png');
     $("#img_MEMORIA").attr('src', 'img/buttons/White/MEMORIA.png');
+    $("#img_ARTESANIA").attr('src', 'img/buttons/White/ARTESANIA.png');
 }
 
 function Default_Variables_Value() {
@@ -164,6 +185,7 @@ function HideTextDescripcion(){
     $("#FiestasDescripcion").css('display', 'none');
     $("#DanzaDescripcion").css('display', 'none');
     $("#MemoriaDescripcion").css('display', 'none');
+    $("#ArtesaniaDescripcion").css('display', 'none');
 }
 
 function CloseContainerDescripcion(){
